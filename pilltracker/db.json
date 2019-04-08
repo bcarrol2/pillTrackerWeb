@@ -32,7 +32,7 @@
     },
     {
       "name": "clonadine",
-      "amount": "20",
+      "amount": "5",
       "description": "take 1 daily",
       "when": "morning",
       "id": 4
@@ -46,7 +46,7 @@
     },
     {
       "name": "clonadine3",
-      "amount": "40",
+      "amount": "3",
       "description": "take 1 daily",
       "when": "morning",
       "id": 6

@@ -31,19 +31,3 @@
     transform: rotate(360deg);
   }
 }
-
-#box {
-  flex-direction: 'row';
-  background-color: 'green';
-  flex: 10;
-  height: 100;
-  padding: 10;
-  border-color: 'white';
-  border-width: 5;
-}
-
-h2 {
-  color: 'red';
-}
-
-

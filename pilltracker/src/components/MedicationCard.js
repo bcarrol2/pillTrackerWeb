@@ -31,14 +31,14 @@ class MedicationCard extends React.Component{
         return(
             <div>
                 <div class="card">
-                    <div class="card-header">
+                    <div style={{backgroundColor: 'green'}} class="card-header">
                         <h3 class="card-title">{this.props.name}</h3>
                     </div>
                     <div class="card-body">
                         <h4 class="card-text">You have {this.state.amount} pills left!</h4>
                         <h4 class="card-text">You need to take this pill during the {this.props.when}.</h4>
                         <h4 class="card-text">Description: {this.props.description}</h4>
-                        <button onClick={this.takenPill}>Done</button>
+                        <button style={{backgroundColor: 'red'}} onClick={this.takenPill}>Done</button>
                     </div>
                 </div>
             </div>
