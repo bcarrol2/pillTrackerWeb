@@ -3,6 +3,7 @@ import MedicationCollection from './MedicationCollection';
 import MedicationForm from './MedicationForm';
 
 const API = "http://localhost:3000/medication"
+// storing the database file to a variable for easier use
 
 class MedicationIndex extends React.Component {
 
@@ -15,6 +16,9 @@ class MedicationIndex extends React.Component {
         }
     }
 
+    // this fetches the data from the db.json file
+    // .then returns a promise
+    // then the empty array in state pushes in data we fetched
     componentDidMount() {
         fetch(API)
         .then(res => res.json())
@@ -26,6 +30,7 @@ class MedicationIndex extends React.Component {
         })
     }
 
+    // this function for the user to add a perscription
     addPerscription = (perscription) => {
         this.setState({
             medication: [...this.state.medication, perscription]
@@ -35,6 +40,7 @@ class MedicationIndex extends React.Component {
     render() {
         let name = this.state.name
 
+        // this function hides the edit name input box
         function divHide() {
             let x = document.getElementById("hidediv")
             if (x.style.display === 'block') {
@@ -44,8 +50,10 @@ class MedicationIndex extends React.Component {
             }
         }
 
-        const allmedicine = this.state.medication
+        // this just stores the new state.medication to a variable
+        const allMedicine = this.state.medication
 
+        // here is what is rendered on the page
         return (
             <div className="App">
                 <div>
@@ -57,11 +65,13 @@ class MedicationIndex extends React.Component {
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
                 </div>
                 <h1>Your medication:</h1>
-                <MedicationCollection medication={allmedicine} />
+                <MedicationCollection medication={allMedicine} />
                 <br/>
                 <MedicationForm addPerscription={this.addPerscription}/>
             </div>
         );
+        // above MedicationIndex is running MedicationCollection and passing the new information
+        // same goes for MedicationForm
     }
 }
 

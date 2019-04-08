@@ -4,20 +4,25 @@ class MedicationCard extends React.Component{
     constructor(props){
         super(props)
 
+        // created state here for the purpose of the takenPill method
         this.state = {
             amount: this.props.amount
         }
 
     }
 
+    // this function subtracts only one pill when done is clicked, so they can't double click
+    // also could of disabled button after clicked
     takenPill = (event) => {
         this.setState({ amount: this.props.amount - 1 })
 
         if (this.state.amount < 10) {
             alert('You need a refill')
         }
+        // there is a popup if their medication is below 10 pills
     }
 
+    // this is what displays the individual cards
     render(){
         console.log(this.props.amount)
         console.log(this.props.key, 'key')
