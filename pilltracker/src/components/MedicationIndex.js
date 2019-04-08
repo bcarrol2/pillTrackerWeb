@@ -1,4 +1,5 @@
 import React from 'react';
+import MedicationCollection from './MedicationCollection';
 
 const API = "http://localhost:3000/medication"
 
@@ -8,7 +9,7 @@ class MedicationIndex extends React.Component {
         super()
 
         this.state = {
-            name: '',
+            name: 'Bertha',
             medication: []
         }
     }
@@ -29,12 +30,14 @@ class MedicationIndex extends React.Component {
 
         function divHide() {
             let x = document.getElementById("hidediv")
-            if (x.style.display === 'none') {
-                x.style.display = "block"
+            if (x.style.display === 'block') {
+                x.style.display = "none"
             } else {
-                x.style.display = 'none'
+                x.style.display = 'block'
             }
         }
+
+        const allmedicine = this.state.medication
 
         return (
             <div className="App">
@@ -47,7 +50,8 @@ class MedicationIndex extends React.Component {
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
                 </div>
                 <h1>Your medication:</h1>
-
+                <MedicationCollection medication={allmedicine} />
+                
             </div>
         );
     }

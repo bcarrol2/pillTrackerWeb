@@ -1,12 +1,9 @@
 import React from 'react';
 
 class MedicationCard extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
-        this.state = {
-            
-        }
     }
 
     render(){
@@ -14,16 +11,18 @@ class MedicationCard extends React.Component{
             <div>
                 <div class="card">
                     <div class="card-header">
-                        Medication:
+                        <h3 class="card-title">{this.props.name}</h3>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Albuterol</h5>
-                        <p class="card-text">Take one at 5:00</p>
+                        <h4 class="card-text">You have {this.props.amount} pills left!</h4>
+                        <h4 class="card-text">You need to take this pill during the {this.props.when}.</h4>
+                        <h4 class="card-text">Description: {this.props.description}</h4>
+                        <button>Done</button>
                     </div>
                 </div>
             </div>
         )
-    }
+    }    
 }
 
 export default MedicationCard;

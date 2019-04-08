@@ -1,25 +1,31 @@
 {
     "medication": [
         {
-            "Name": "tramadol",
+            "name": "Tramadol",
             "MG": 10,
-            "Amount": 20,
-            "From": "CVS",
-            "Order number": 14892053928
+            "amount": 7,
+            "description": "Take 1",
+            "when": "Morning",
+            "from": "CVS",
+            "order number": 14892053928
         },
         {
-            "Name": "hydroxychloroquine",
+            "name": "Hydroxychloroquine",
             "MG": 30,
-            "Amount": 100,
-            "From": "CVS",
-            "Order number": 5920389228
+            "amount": 100,
+            "description": "Take 1",
+            "when": "Night",
+            "from": "CVS",
+            "order number": 5920389228
         },
         {
-            "Name": "chlorthalidone",
+            "name": "Chlorthalidone",
             "MG": 50,
-            "Amount": 50,
-            "From": "Publix",
-            "Order number": 392854930008
+            "amount": 50,
+            "description": "Take 1",
+            "when": "Evening",
+            "from": "Publix",
+            "order number": 392854930008
         }
     ]
 }
