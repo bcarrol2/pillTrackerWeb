@@ -1,6 +1,7 @@
 {
     "medication": [
         {
+            "id": 1,
             "name": "Tramadol",
             "MG": 10,
             "amount": 7,
@@ -10,6 +11,7 @@
             "order number": 14892053928
         },
         {
+            "id": 2,
             "name": "Hydroxychloroquine",
             "MG": 30,
             "amount": 100,
@@ -19,6 +21,7 @@
             "order number": 5920389228
         },
         {
+            "id": 3,
             "name": "Chlorthalidone",
             "MG": 50,
             "amount": 50,

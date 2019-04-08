@@ -2,7 +2,6 @@ import React from 'react';
 import MedicationCard from './MedicationCard';
 
     const MedicationCollection = (props) => {
-        // console.log('this is', props)
         const medicationList = props.medication.map(perscription =>
             <MedicationCard
                 key={perscription.id}
@@ -10,12 +9,12 @@ import MedicationCard from './MedicationCard';
                 when={perscription.when}
                 description={perscription.description}
                 amount={perscription.amount} />)
-                console.log('this is', props)
+            console.log('medlist', medicationList)    
     
 
     return(
         <div>
-                    {medicationList}
+            {medicationList}
         </div>
     )
 }
