@@ -12,11 +12,11 @@ export default class MedicationForm extends React.Component{
         }
     }
 
-    handleChange = (event, {name, value}) => {
-        this.setState({
-            [name]: value
-        })
-    }
+    // handleChange = (event, {name, value}) => {
+    //     this.setState({
+    //         [name]: value
+    //     })
+    // }
 
     handleSubmit = event => {
         event.preventDefault()

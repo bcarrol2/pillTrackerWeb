@@ -32,6 +32,7 @@ class MedicationIndex extends React.Component {
 
     // this function for the user to add a perscription
     addPerscription = (perscription) => {
+        console.log('made it to index')
         this.setState({
             medication: [...this.state.medication, perscription]
         })
