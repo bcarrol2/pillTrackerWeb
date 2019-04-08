@@ -1,0 +1,25 @@
+{
+    "medication": [
+        {
+            "Name": "tramadol",
+            "MG": 10,
+            "Amount": 20,
+            "From": "CVS",
+            "Order number": 14892053928
+        },
+        {
+            "Name": "hydroxychloroquine",
+            "MG": 30,
+            "Amount": 100,
+            "From": "CVS",
+            "Order number": 5920389228
+        },
+        {
+            "Name": "chlorthalidone",
+            "MG": 50,
+            "Amount": 50,
+            "From": "Publix",
+            "Order number": 392854930008
+        }
+    ]
+}
