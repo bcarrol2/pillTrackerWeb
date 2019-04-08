@@ -10,14 +10,15 @@ export default class MedicationForm extends React.Component{
             description: '',
             when: ''
         }
+        // state is set to empty strings for empty form
     }
 
-    // handleChange = (event, {name, value}) => {
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
-
+    // this function posts the perscription from the user to the page and database
+    // restful routs post to the same route as a get request
+    // preventdefault adds it without having to reload the page
+    // headers have to match up 
+    // body has to be in a string for json and we are passing it whatever the state is
+    // .thens gives promises and the form is cleared out at the end
     handleSubmit = event => {
         event.preventDefault()
         fetch('http://localhost:3000/medication', {
@@ -43,6 +44,7 @@ export default class MedicationForm extends React.Component{
         }))
     }
 
+    // what shows up on the bottom of the page
     render(){
         return(
             <div>

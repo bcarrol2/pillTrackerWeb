@@ -65,6 +65,9 @@ class MedicationIndex extends React.Component {
                 <div id="hidediv">
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
                 </div>
+                <div class="alert alert-primary" role="alert">
+                    
+                </div>
                 <h1>Your medication:</h1>
                 <MedicationCollection medication={allMedicine} />
                 <br/>

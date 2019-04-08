@@ -11,4 +11,5 @@ type 'npm start' into the terminal
 #If I had more time I would of set up the end on the manufacturers end where they could have a primary key like with blockchain and the user can accept them uploading the perscriptions for them to make things easier. 
 #Finish mobile app
 #Login
-#Design 
+#Design
+#Setup a timeclock and alert them at actual times

@@ -18,6 +18,8 @@ class MedicationCard extends React.Component{
 
         if (this.state.amount < 10) {
             alert('You need a refill')
+        } else {
+            alert('You have taken your pill')
         }
         // there is a popup if their medication is below 10 pills
     }
