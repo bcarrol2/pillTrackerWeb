@@ -1,5 +1,6 @@
 import React from 'react';
 import MedicationCollection from './MedicationCollection';
+import MedicationForm from './MedicationForm';
 
 const API = "http://localhost:3000/medication"
 
@@ -22,6 +23,12 @@ class MedicationIndex extends React.Component {
             this.setState({
                 medication: medication
             })
+        })
+    }
+
+    addPerscription = (perscription) => {
+        this.setState({
+            medication: [...this.state.medication, perscription]
         })
     }
 
@@ -51,7 +58,8 @@ class MedicationIndex extends React.Component {
                 </div>
                 <h1>Your medication:</h1>
                 <MedicationCollection medication={allmedicine} />
-                
+                <br/>
+                <MedicationForm addPerscription={this.addPerscription}/>
             </div>
         );
     }

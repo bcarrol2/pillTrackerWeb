@@ -8,7 +8,6 @@ import MedicationIndex from './components/MedicationIndex';
 const App = () => (
   <div className="App">
     <MedicationIndex />
-    <button>Add Medicine</button>
   </div>
 )
 
