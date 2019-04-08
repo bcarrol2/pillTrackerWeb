@@ -11,7 +11,11 @@ class MedicationCard extends React.Component{
     }
 
     takenPill = (event) => {
-        console.log(event, 'hey')
+        this.setState({ amount: this.props.amount - 1 })
+
+        if (this.state.amount < 10) {
+            alert('You need a refill')
+        }
     }
 
     render(){
@@ -27,7 +31,7 @@ class MedicationCard extends React.Component{
                         <h4 class="card-text">You have {this.state.amount} pills left!</h4>
                         <h4 class="card-text">You need to take this pill during the {this.props.when}.</h4>
                         <h4 class="card-text">Description: {this.props.description}</h4>
-                        <button onClick={() => this.setState({amount: this.props.amount - 1})}>Done</button>
+                        <button onClick={this.takenPill}>Done</button>
                     </div>
                 </div>
             </div>
