@@ -50,17 +50,25 @@ export default class MedicationForm extends React.Component{
             <div>
                 <h1>Add a perscription!</h1>
                 <form onSubmit={this.handleSubmit}>
-                <lable>Perscription name</lable>
+                <lable>
+                    Perscription name:
                     <input name="name" placeholder="Perscription name" value={this.state.name} onChange={event => this.setState({ name: event.target.value})} />
+                </lable>
                 <br />
-                <lable>How many pills are in the bottle?</lable>
+                <lable>
+                    How many pills are in the bottle?
                     <input name="amount" placeholder="Amount of pills" value={this.state.amount} onChange={event => this.setState({ amount: event.target.value})} />
+                </lable>
                 <br />
-                <lable>Description</lable>
+                <lable>
+                    Description:
                     <input name="description" placeholder="Description" value={this.state.description} onChange={event => this.setState({ description: event.target.value})} />
+                </lable>
                 <br />
-                <lable>When are you suppose to take the pill?</lable>
-                <input name="when" placeholder="When?" value={this.state.when} onChange={event => this.setState({when: event.target.value})} />
+                <lable>
+                    When are you suppose to take the pill?
+                    <input name="when" placeholder="When?" value={this.state.when} onChange={event => this.setState({when: event.target.value})} />
+                </lable>
                 <br />
                 <button>Submit</button>
                 </form>

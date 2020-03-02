@@ -17,7 +17,7 @@ class MedicationCard extends React.Component{
         this.setState({ amount: this.props.amount - 1 })
 
         if (this.state.amount < 10) {
-            alert('You need a refill')
+            alert('You need a refill', 'You have taken your pill')
         } else {
             alert('You have taken your pill')
         }
@@ -26,18 +26,16 @@ class MedicationCard extends React.Component{
 
     // this is what displays the individual cards
     render(){
-        console.log(this.props.amount)
-        console.log(this.props.key, 'key')
         return(
             <div>
-                <div class="card">
-                    <div style={{backgroundColor: 'green'}} class="card-header">
-                        <h3 class="card-title">{this.props.name}</h3>
+                <div className="card">
+                    <div style={{backgroundColor: 'green'}} className="card-header">
+                        <h3 className="card-title">{this.props.name}</h3>
                     </div>
-                    <div class="card-body">
-                        <h4 class="card-text">You have {this.state.amount} pills left!</h4>
-                        <h4 class="card-text">You need to take this pill during the {this.props.when}.</h4>
-                        <h4 class="card-text">Description: {this.props.description}</h4>
+                    <div className="card-body">
+                        <h4 className="card-text">You have {this.state.amount} pills left!</h4>
+                        <h4 className="card-text">You need to take this pill during the {this.props.when}.</h4>
+                        <h4 className="card-text">Description: {this.props.description}</h4>
                         <button style={{backgroundColor: 'red'}} onClick={this.takenPill}>Done</button>
                     </div>
                 </div>

@@ -23,7 +23,6 @@ class MedicationIndex extends React.Component {
         fetch(API)
         .then(res => res.json())
         .then(medication => {
-            console.log(medication)
             this.setState({
                 medication: medication
             })
@@ -32,7 +31,6 @@ class MedicationIndex extends React.Component {
 
     // this function for the user to add a perscription
     addPerscription = (perscription) => {
-        console.log('made it to index')
         this.setState({
             medication: [...this.state.medication, perscription]
         })
@@ -65,10 +63,10 @@ class MedicationIndex extends React.Component {
                 <div id="hidediv">
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
                 </div>
+                <MedicationForm addPerscription={this.addPerscription}/>
                 <h1>Your medication:</h1>
                 <MedicationCollection medication={allMedicine} />
                 <br/>
-                <MedicationForm addPerscription={this.addPerscription}/>
             </div>
         );
         // above MedicationIndex is running MedicationCollection and passing the new information
