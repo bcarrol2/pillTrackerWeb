@@ -50,6 +50,13 @@
       "description": "take 1 daily",
       "when": "morning",
       "id": 6
+    },
+    {
+      "name": "zanax",
+      "amount": "20",
+      "description": "take 5",
+      "when": "night",
+      "id": 7
     }
   ]
 }
