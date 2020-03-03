@@ -36,7 +36,7 @@ class MedicationCard extends React.Component{
                         <h4 className="card-text">You have {this.state.amount} pills left!</h4>
                         <h4 className="card-text">You need to take this pill during the {this.props.when}.</h4>
                         <h4 className="card-text">Description: {this.props.description}</h4>
-                        <button style={{backgroundColor: 'red'}} onClick={this.takenPill}>Done</button>
+                        <button id="pill-taken-button" onClick={this.takenPill}>Done</button>
                     </div>
                 </div>
             </div>

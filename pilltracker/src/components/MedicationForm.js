@@ -47,7 +47,7 @@ export default class MedicationForm extends React.Component{
     // what shows up on the bottom of the page
     render(){
         return(
-            <div>
+            <div className="medform">
                 <h1>Add a perscription!</h1>
                 <form onSubmit={this.handleSubmit}>
                 <lable>

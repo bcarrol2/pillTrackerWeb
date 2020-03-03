@@ -1,3 +1,21 @@
 input {
   margin: 5px;
 }
+
+.medform {
+  border: 2px solid black;
+  display: flex;
+}
+
+.card {
+  width: 40%;
+  float: left;
+  margin: 15px;
+}
+
+#pill-taken-button {
+  background-color: red;
+  margin: auto;
+  display: block;
+  width: 28%;
+}

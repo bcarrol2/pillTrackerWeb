@@ -55,9 +55,7 @@ class MedicationIndex extends React.Component {
         // here is what is rendered on the page
         return (
             <div className="App">
-                <div>
-                    <h1>My Personal Pill Tracker</h1>
-                </div>
+                <h1>My Personal Pill Tracker</h1>
                 <h2>Hello, {name}</h2>
                 <button onClick={divHide}>Edit name: </button>
                 <div id="hidediv">
