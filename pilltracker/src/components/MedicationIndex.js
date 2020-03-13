@@ -42,10 +42,10 @@ class MedicationIndex extends React.Component {
         // this function hides the edit name input box
         function divHide() {
             let x = document.getElementById("hidediv")
-            if (x.style.display === 'block') {
-                x.style.display = "none"
+            if (x.style.display === 'none') {
+                x.style.display = "block"
             } else {
-                x.style.display = 'block'
+                x.style.display = 'none'
             }
         }
 
