@@ -19,8 +19,11 @@ const Landing = () => {
     return(
         <StyledBody>
             <Link to="/medication">
-                <button>Take Pill</button>
+                <button id="landing-page-button">Take Pill</button>
             </Link>
+            <div className="landing-page-text-container">
+                <h3>Never miss taking your vital medication again!</h3>
+            </div>
         </StyledBody>
     )
 }
