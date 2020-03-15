@@ -1,6 +1,5 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 input {
@@ -34,7 +33,9 @@ input {
   margin-right: 5%;
   margin-top: 20%;
   /* background-color: white; */
-  box-shadow: 10px 10px 8px #ffffff;
+  box-shadow: 10px 10px 8px black;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #landing-page-button {
@@ -45,4 +46,10 @@ input {
   border-radius: 16px;
   width: 125px;
   background-color: aquamarine;
+  box-shadow: 10px 10px 8px black;
+  text-transform: uppercase;
+}
+
+#landing-page-button:focus {
+  outline: 0;
 }
