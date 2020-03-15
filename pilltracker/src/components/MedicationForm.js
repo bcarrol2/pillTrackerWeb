@@ -44,7 +44,6 @@ export default class MedicationForm extends React.Component{
         }))
     }
 
-    // what shows up on the bottom of the page
     render(){
         return(
             <div className="medform">
