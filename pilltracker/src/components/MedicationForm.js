@@ -69,7 +69,7 @@ export default class MedicationForm extends React.Component{
                     <input name="when" placeholder="When?" value={this.state.when} onChange={event => this.setState({when: event.target.value})} />
                 </lable>
                 <br />
-                <button>Submit</button>
+                <button id="basic-button">Submit</button>
                 </form>
             </div>
         )

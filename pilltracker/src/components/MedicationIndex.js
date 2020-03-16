@@ -57,7 +57,7 @@ class MedicationIndex extends React.Component {
             <div className="App">
                 <h1>My Personal Pill Tracker</h1>
                 <h2>Hello, {name}</h2>
-                <button onClick={divHide}>Edit name: </button>
+                <button id="basic-button" onClick={divHide}>Edit name: </button>
                 <div id="hidediv">
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
                 </div>

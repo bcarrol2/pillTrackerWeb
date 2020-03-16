@@ -53,3 +53,11 @@ input {
 #landing-page-button:focus {
   outline: 0;
 }
+
+#basic-button {
+  border-radius: 16px;
+  width: 125px;
+  background-color: aquamarine;
+  box-shadow: 10px 10px 8px black;
+  text-transform: uppercase;
+}
