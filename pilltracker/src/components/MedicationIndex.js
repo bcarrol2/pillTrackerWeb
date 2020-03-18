@@ -1,9 +1,22 @@
 import React from 'react';
 import MedicationCollection from './MedicationCollection';
 import MedicationForm from './MedicationForm';
+import styled from 'styled-components';
 
 const API = "http://localhost:3000/medication"
 // storing the database file to a variable for easier use
+
+const StyledBody = styled.div `
+  background-color: lightblue;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+`;
 
 class MedicationIndex extends React.Component {
 
@@ -54,6 +67,7 @@ class MedicationIndex extends React.Component {
 
         // here is what is rendered on the page
         return (
+            <StyledBody>
             <div>
                 <h1 style={{color: 'navy', textAlign: 'center'}}>My Personal Pill Tracker</h1>
                 <h2>Hello, {name}</h2>
@@ -66,6 +80,7 @@ class MedicationIndex extends React.Component {
                 <MedicationCollection medication={allMedicine} />
                 <br/>
             </div>
+            </StyledBody>
         );
         // above MedicationIndex is running MedicationCollection and passing the new information
         // same goes for MedicationForm
