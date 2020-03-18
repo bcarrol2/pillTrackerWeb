@@ -8,7 +8,7 @@ const API = "http://localhost:3000/medication"
 
 const StyledBody = styled.div `
   background-color: lightblue;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -70,11 +70,11 @@ class MedicationIndex extends React.Component {
             <StyledBody>
             <div>
                 <h1 style={{color: 'navy', textAlign: 'center'}}>My Personal Pill Tracker</h1>
-                <h2>Hello, {name}</h2>
-                <button id="basic-button" onClick={divHide}>Edit name: </button>
+                <h2 style={{textDecoration: 'underline'}}>Hello, {name}</h2>
+                {/* <button id="basic-button" onClick={divHide}>Edit name: </button>
                 <div id="hidediv">
                     <input type="text" name="name" onChange={event => this.setState({ name: event.target.value })} />
-                </div>
+                </div> */}
                 <MedicationForm addPerscription={this.addPerscription}/>
                 <h1>Your medication:</h1>
                 <MedicationCollection medication={allMedicine} />
